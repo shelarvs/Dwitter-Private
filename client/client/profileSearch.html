@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Dwitter Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    	body{
+background:#ddd;
+}
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+    </style>
+</head>
+<body>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<div class="container">
+    <br/>
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input type="text" id="userAddressData" name="userAddressData" class="form-control form-control-sm" placeholder="Search Dwitter User">
+                                    </div>
+                                    <!--end of col-->
+                                  
+                                        
+                                        <button class="btn btn-primary btn-sm" id="btn_search" onclick="handleSearch">Search</button>
+
+                                    <!--end of col-->
+                                </div>
+                            
+                        </div>
+                        <!--end of col-->
+                    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">	
+</script>
+
+<script type="text/javascript" src="../artifacts/DwitterAbi.js"></script>
+<script type="text/javascript" src="../node_modules/web3/dist/web3.min.js"></script>
+<script type="text/javascript" src="./js/storeSearchData.js"></script>
+
+</body>
+</html>
